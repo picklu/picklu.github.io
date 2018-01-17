@@ -1,23 +1,306 @@
 <!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
 <html lang="en">
-    <head>
-        <title>Picklu On GitHub</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                text-align: center;
-                color: green;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-		</header>
-        <main>
-            <h1>Hello World! This is Picklu...</h1>
-        </main>
-        <footer>
-		</footer>
-    </body>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Picklu On GitHub</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css' rel='stylesheet' />
+  <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One|Dancing+Script|Great+Vibes|Lobster' rel='stylesheet' />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+  <link href='https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css' rel='stylesheet' />
+  <link href='social_buttons.css' rel='stylesheet' />
+  <style>
+    body {
+      background: #888;
+      color: rgb(70, 70, 70);
+      padding-top: 70px;
+      font-family: "Lobster", cursive, "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+      font-size: 1.5rem;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    main .container {
+      box-shadow: -60px 0px 100px -90px #333, 60px 0px 100px -90px #333;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    footer {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 1.3rem;
+    }
+
+    form {
+      padding: 0 2rem;
+    }
+
+    #about {
+      background-color: #ccc;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    #portfolio {
+      background-color: #ddd;
+    }
+
+    #portfolio img {
+      padding: 0 2rem 2rem 2rem;
+    }
+
+    .portfolio-header,
+    .contact-header,
+    .footer-header {
+      padding: 3rem 0;
+      color: rgb(80, 80, 80) !important;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+    }
+
+    .bg-nice {
+      background-color: #aa5;
+    }
+
+    .bg-nice-x {
+      background-color: #aa9;
+    }
+
+    .bg-nice-header {
+      box-shadow: 0 5px 10px #666;
+    }
+
+    .bg-nice-footer {
+      box-shadow: 0 -5px 10px #666;
+    }
+
+    .navbar-brand {
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: #595 !important;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+      font-size: 2.5rem;
+      font-family: "Alfa Slab One", cursive;
+    }
+
+    .brand-footer {
+      font-size: 1.5rem;
+    }
+
+    .whoami {
+      color: rgb(50, 50, 50) !important;
+      font-family: 'Dancing Script', cursive;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+    }
+
+    .dotted {
+      margin-left: 0px;
+      background-color: #777;
+      border: 2px solid #777;
+    }
+
+    .dotted-about {
+      width: 90%;
+    }
+
+    .dotted-footer {
+      width: 100%;
+    }
+
+    .tags {
+      color: rgb(50, 50, 50) !important;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+    }
+
+    .btn-contact {
+      background-color: #aa6;
+      box-shadow: 0 -5px 10px #666, 0 -5px 10px #666;
+      color: rgb(80, 80, 80) !important;
+      font-size: 1.8rem;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+    }
+
+    .text-footer {
+      color: rgb(80, 80, 80) !important;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+  <header id="banner">
+    <nav class="navbar navbar-expand-md navbar-light bg-nice bg-nice-header fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">P3W</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbar-header">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- endo of header -->
+  <main>
+    <!-- start of main -->
+    <div class="container bg-light">
+      <div id="about" class="row">
+        <div class="col-md-4 text-center">
+          <img class="avatar rounded-circle border" width="250" height="250" src="https://gravatar.com/avatar/cb592fecaafcb9c9afe2b6233b77b196?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"
+            alt="Picklu's avatar">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="whoami text-justified font-weight-bold">I am a Chemist, a Materials Scientist and an aspiring Data Scientist. Between, I am trying to be a full-stack Web Developer. I find it a bit difficult to play with UI/UX; however, I believe, it will not be a problem if I keep learning with
+                freeCodeCamp.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="dotted dotted-about">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 tags text-justified">
+              <p>Chemist - Materials Scientist - Web Developer - Data Scientist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio" class="row">
+        <div class="col-md-12">
+          <div class="row text-center">
+            <div class="col-md-12 portfolio-header">
+              <h2><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;&nbsp;Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <a href="https://www.jvanalysis.com" target="_blank">
+                <img class="img-fluid rounded" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
+            </a>
+            </div>
+            <div class="col-md-6 text-center">
+              <a href="http://cs50mashup.herokuapp.com" target="_blank">
+            <img class="img-fluid rounded" src="https://www.jvanalysis.com/static/images/mashup.png" alt="CS50 mashup">
+          </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250" alt="portfolio placeholder#1"></a>
+            </div>
+            <div class="col-md-6 text-center">
+              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250"  alt="portfolio placeholder#2"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250" alt="portfolio placeholder#3"></a>
+            </div>
+            <div class="col-md-6 text-center">
+              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250"  alt="portfolio placeholder#4"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250" alt="portfolio placeholder#5"></a>
+            </div>
+            <div class="col-md-6 text-center">
+              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250"  alt="portfolio placeholder#6"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="row bg-nice-x">
+        <div class="col-md-12">
+          <div class="row text-center">
+            <div class="col-md-12 contact-header">
+              <h2><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;&nbsp;Contact</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              <form class="bg-nice-x">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@address">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="message" rows="4" placeholder="Hi Picklu, I just want to say that you did a great work! Cheers..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-contact btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;Send</button>
+              </form>
+            </div>
+            <div class="col-md-5 text-justified">
+              <p>Please feel free to drop me a message regarding how I developed this <b>Portfolio Web Page</b> or why I decided to change my career path to become a <b>Web Developer</b> even at my early forties. I will definitely respond.</p>
+              <p>Thank you for exploring my portfolio.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- end of main -->
+  <footer>
+    <!-- start of footer  -->
+    <div class="bg-nice bg-nice-footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 footer-header">
+            <p>Built with <i class="fa fa-heart" aria-hidden="true"></i> by <a class="text-footer" href="https://twitter.com/picklumithu" target="_blank">@picklumithu</a></p>
+          </div>
+          <div class="col-md-6 footer-header">
+            <span>
+              <a class="btn btn-social-icon btn-bitbucket" href="https://bitbucket.org/picklu" target="_blank"><span class="fa fa-bitbucket"></span></a>
+            <a class="btn btn-social-icon btn-github" href="https://github.com/picklu"><span class="fa fa-github"></span></a>
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/subrata.sarker.144" target="_blank"><span class="fa fa-facebook"></span></a>
+            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/subrata-sarker-37921462/" target="_blank"><span class="fa fa-linkedin"></span></a>
+            <a class="btn btn-social-icon btn-vimeo" href="https://www.researchgate.net/profile/Subrata_Sarker2" target="_blank"><span class="ai ai-researchgate ai-4x"></span></a>
+            <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/picklumithu" target="_blank"><span class="fa fa-twitter"></span></a>
+            </span>
+          </div>
+        </div>
+        <hr class="dotted dotted-footer">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="copyright">P3W &copy; 2018.  All Rights Reserved</span>
+
+          </div>
+          <div class="col-md-6 text-right">
+            <a class="navbar-brand brand-footer" href="#">P3W</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+</body>
+
 </html>
