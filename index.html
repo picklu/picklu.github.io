@@ -11,14 +11,16 @@
   <link href='css/style.css' rel='stylesheet' />
 </head>
 <body>
-  <header id="banner">
-    <nav class="navbar navbar-expand-md navbar-light bg-nice bg-nice-header fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">P3W</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="true" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbar-header">
+  <header class="header">
+    <div class="profile">
+      <a id="profile-link" class="profile-link" href="https://github.com/picklu" target="_blank">
+        <img src="https://gravatar.com/avatar/cb592fecaafcb9c9afe2b6233b77b196?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png" alt="Profile iamge">
+      </a>
+      <span class="description">I am a chemist, a materials scientist, and an asipring data scientist. Currently, I am learning full-stack web development.</span>
+    </div>
+    <nav id="navbar" class="navbar">
+        <span class="navbar-toggler"></span>
+        <div class="navbar-collapse" id="navbar-header">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link active" href="#about">About</a>
@@ -33,153 +35,119 @@
         </div>
       </div>
     </nav>
-  </header>
-  <!-- endo of header -->
-  <main>
-    <!-- start of main -->
-    <div class="container bg-light">
-      <div id="about" class="row">
-        <div class="col-md-4 text-center">
-          <img class="avatar rounded-circle border" width="250" height="250" src="https://gravatar.com/avatar/cb592fecaafcb9c9afe2b6233b77b196?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"
-            alt="Picklu's avatar">
-        </div>
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="tags text-justified">I am a Chemist, a Materials Scientist and an aspiring Data Scientist. Between, I am trying to be a full-stack Web Developer. I find it a bit difficult to play with UI/UX; however, I believe, it will not be a problem if I keep learning with
-                <a class="tags" href="https://www.freecodecamp.com" target="_blank"><b>freeCodeCamp</b></a>.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <hr class="dotted dotted-about">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 tags text-justified">
-              <p>Chemist - Materials Scientist - Web Developer - Data Scientist</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="portfolio" class="row">
-        <div class="col-md-12">
-          <div class="row text-center">
-            <div class="col-md-12 portfolio-header">
-              <h2><i class="fas fa-briefcase" aria-hidden="true"></i>&nbsp;&nbsp;Portfolio</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 text-center">
-              <a href="https://www.jvanalysis.com" target="_blank">
-                <img class="img-fluid rounded" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
-            </a>
-            </div>
-            <div class="col-md-6 text-center">
-              <a href="http://cs50mashup.herokuapp.com" target="_blank">
-            <img class="img-fluid rounded" src="https://www.jvanalysis.com/static/images/mashup.png" alt="CS50 mashup">
-          </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 text-center">
-              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250" alt="portfolio placeholder#1"></a>
-            </div>
-            <div class="col-md-6 text-center">
-              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250"  alt="portfolio placeholder#2"></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 text-center">
-              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250" alt="portfolio placeholder#3"></a>
-            </div>
-            <div class="col-md-6 text-center">
-              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250"  alt="portfolio placeholder#4"></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 text-center">
-              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250" alt="portfolio placeholder#5"></a>
-            </div>
-            <div class="col-md-6 text-center">
-              <a href="https://placeholder.com"><img class="img-fluid rounded" src="http://via.placeholder.com/500x250"  alt="portfolio placeholder#6"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="contact" class="row bg-nice-x">
-        <div class="col-md-12">
-          <div class="row text-center">
-            <div class="col-md-12 contact-header">
-              <h2><i class="fas fa-address-book" aria-hidden="true"></i>&nbsp;&nbsp;Contact</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-7">
-              <form class="bg-nice-x">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@address">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" id="message" rows="4" placeholder="Hi Picklu, I just want to say that you did a great work! Cheers..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-contact btn-block"><i class="fas fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;Send</button>
-              </form>
-            </div>
-            <div class="col-md-5 text-justified">
-              <p>Please feel free to drop me a message regarding how I developed this <b>Portfolio Web Page</b> or why I decided to change my career path to become a <b>Web Developer</b> even at my early forties. I will definitely respond.</p>
-              <p>Thank you for exploring my portfolio.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">&nbsp;</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- end of main -->
-  <footer>
-    <!-- start of footer  -->
-    <div class="bg-nice bg-nice-footer">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-6 footer-header">
-            <p>Built with <i class="fas fa-heart"></i> by <a class="text-footer" href="https://twitter.com/picklumithu" target="_blank">@picklumithu</a></p>
-          </div>
-          <div class="col-md-6 footer-header">
-            <span>
-              <a class="btn btn-social-icon btn-bitbucket" href="https://bitbucket.org/picklu" target="_blank"><i class="fab fa-bitbucket"></i></a>
-              <a class="btn btn-social-icon btn-github" href="https://github.com/picklu"><span class="fab fa-github"></span></a>
-              <a class="btn btn-social-icon btn-vimeo" href="https://scholar.google.co.kr/citations?hl=en&pli=1&user=h_xLusAAAAAJ" target="_blank"><i class="ai ai-google-scholar"></i></a>
-              <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/subrata.sarker.144" target="_blank"><span class="fab fa-facebook"></span></a>
-              <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/subrata-sarker-37921462/" target="_blank"><span class="fab fa-linkedin"></span></a>
-              <a class="btn btn-social-icon btn-vimeo" href="https://www.researchgate.net/profile/Subrata_Sarker2" target="_blank"><i class="ai ai-researchgate"></i></a>
-              <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/picklumithu" target="_blank"><span class="fab fa-twitter"></span></a>
-            </span>
-          </div>
-        </div>
-        <hr class="dotted dotted-footer">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="copyright">P3W &copy; 2018.</span>
-          </div>
-          <div class="col-md-6">
-            <span class="copyright">All Rights Reserved</span>
-          </div>
-          <div class="col-md-2">
-            <a class="navbar-brand brand-footer" href="#">P3W</a>
-          </div>
-        </div> 
-      </div>
-    </div>
-  </footer> <!-- end of footer -->
+  </header><!-- endo of header -->
+
+  <section id="welcome-section"><!-- start of welcome section -->
+    <h1>Welcome Section</h1>
+  </section><!-- end of welcome section -->
   
-  <!-- Script to run the tests -->
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <section id="projects" class="projects"><!-- start of projects -->
+    <h2 class="portfolio-header"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;&nbsp;Portfolio</h2>
+
+    <div class="row">
+      <div class="project-tile col-1-of-3">
+        <h2 class="project-header">jV Analysis</h2>
+        <a class="project-link" href="https://www.jvanalysis.com" target="_blank">
+          <img class="project-image" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
+        </a>
+      </div>
+      
+      <div class="project-tile col-1-of-3">
+        <h2 class="project-header">jV Analysis</h2>
+        <a class="project-link" href="https://www.jvanalysis.com" target="_blank">
+          <img class="project-image" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
+        </a>
+      </div>
+
+      <div class="project-tile col-1-of-3">
+        <h2 class="project-header">jV Analysis</h2>
+        <a class="project-link" href="https://www.jvanalysis.com" target="_blank">
+          <img class="project-image" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
+        </a>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="project-tile col-1-of-3">
+        <h2 class="project-header">jV Analysis</h2>
+        <a class="project-link" href="https://www.jvanalysis.com" target="_blank">
+          <img class="project-image" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
+        </a>
+      </div>
+
+      <div class="project-tile col-1-of-3">
+        <h2 class="project-header">jV Analysis</h2>
+        <a class="project-link" href="https://www.jvanalysis.com" target="_blank">
+          <img class="project-image" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
+        </a>
+      </div>
+
+      <div class="project-tile col-1-of-3">
+        <h2 class="project-header">jV Analysis</h2>
+        <a class="project-link" href="https://www.jvanalysis.com" target="_blank">
+          <img class="project-image" src="https://www.jvanalysis.com/static/images/jvanalysis.png" alt="jvanalysis">
+        </a>
+      </div>
+    </div>
+  </section><!-- end of projects -->
+
+  <section id="contact" class="contact"><!-- start of contact -->
+    <h2 class="contact__header"><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;&nbsp;Contact</h2>
+    <div class="row">
+     <div class="col-2-of-3 contact__form">
+       <form class="form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@address">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="message" rows="4" placeholder="Hi Picklu, I just want to say that you did a great work! Cheers..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-contact btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;Send</button>
+      </form>
+     </div> 
+      <div class="col-1-of-3 contact__text">
+        <p>Please feel free to drop me a message regarding how I developed this <b>Portfolio Web Page</b> or why I decided to change my career path to become a <b>Web Developer</b> even at my early forties. I will definitely respond.</p>
+        <p>Thank you for exploring my portfolio.</p>
+      </div>
+    </div>
+  </section><!-- end of contact -->
+
+  <footer class="footer"><!-- start of footer  -->
+    <div class="row">
+      <div class="footer__text">
+        <p class="footer__text--content">Built with <i class="fas fa-heart"></i> by <a class="text-footer" href="https://twitter.com/picklumithu" target="_blank">@picklumithu</a></p>
+      </div>
+      <div class="footer__links">
+        <span class="footer__links--content">
+          <a class="btn btn-social-icon btn-bitbucket" href="https://bitbucket.org/picklu" target="_blank"><i class="fab fa-bitbucket"></i></a>
+          <a class="btn btn-social-icon btn-github" href="https://github.com/picklu"><i class="fab fa-github"></i></a>
+          <a class="btn btn-social-icon btn-vimeo" href="https://scholar.google.co.kr/citations?hl=en&pli=1&user=h_xLusAAAAAJ" target="_blank"><i class="ai ai-google-scholar"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/subrata.sarker.144" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/subrata-sarker-37921462/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="btn btn-social-icon btn-vimeo" href="https://www.researchgate.net/profile/Subrata_Sarker2" target="_blank"><i class="ai ai-researchgate"></i></a>
+          <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/picklumithu" target="_blank"><i class="fab fa-twitter"></i></a>
+        </span>
+      </div>
+    </div>
+        
+    <div class="row">
+      <div class="col-2-of-3">
+        <span class="copyright">&copy; picklu 2018.</span>
+      </div>
+      <div class="col-2-of-3">
+        <span class="copyright">All Rights Reserved</span>
+      </div>
+      <div class="col-1-of-3">
+        <a class="navbar-brand brand-footer" href="#">picklu</a>
+      </div>
+    </div>
+  </footer><!-- end of footer -->
+  
+   <!-- Script to run the tests -->
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </body>
 </html>
