@@ -4,3 +4,11 @@
 @import "projects";
 @import "contact";
 @import "footer";
+
+.header,
+.welcome,
+.projects,
+.contact,
+.footer {
+    padding: 2rem $gutter-main;
+}
