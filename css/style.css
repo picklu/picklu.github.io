@@ -114,8 +114,8 @@ a:visited {
       width: 100%; }
       .navbar__collapse .navbar-nav .nav-item {
         border-radius: 5px;
-        font-size: 1.8rem;
-        margin-left: 2rem;
+        font-size: 2rem;
+        margin-left: 1rem;
         padding: 1.2rem 1.5rem;
         text-transform: uppercase; }
         .navbar__collapse .navbar-nav .nav-item:hover, .navbar__collapse .navbar-nav .nav-item:active {
