@@ -1,0 +1,11 @@
+.welcome {
+    background-color: $color-primary;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__message {
+        margin: auto;
+    }
+}
