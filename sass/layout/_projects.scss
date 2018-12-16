@@ -1,5 +1,7 @@
 .projects {
     background-color: orange;
+    margin-top: 2rem;
+    padding: 2rem 20vw;
 
     .portfolio-header {
         font-size: 2.5rem;
@@ -8,9 +10,19 @@
 
     .project-tile {
         background-color: aqua;
+        border: 1px solid orangered;
+        margin: 2rem;
+        min-width: 100px;
 
-        .project-image {
-            max-width: 300px;
+        .project-header {
+            text-align: center;
+        }
+
+        .project-link {
+
+            .project-image {
+                max-width: 100%;
+            }
         }
     }
 

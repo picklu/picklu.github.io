@@ -22,36 +22,64 @@ html {
 li {
   list-style: none; }
 
+.btn {
+  border: none; }
+  .btn:focus, .btn:active {
+    outline: none; }
+
 .row {
   display: flex;
   flex-wrap: wrap; }
 
 .col,
-.col-1-of-3,
-.col-2-of-3,
-.col-3-of-3 {
+.col-1-of-6,
+.col-2-of-6,
+.col-3-of-6,
+.col-4-of-6,
+.col-5-of-6,
+.col-6-of-6 {
   position: relative;
   width: 100%;
   min-height: 1px; }
 
-.col-1-of-3 {
+.col-1-of-6 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%; }
+
+.col-2-of-6 {
   flex: 0 0 33.333333%;
   max-width: 33.333333%; }
 
-.col-2-of-3 {
+.col-3-of-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.col-4-of-6 {
   flex: 0 0 66.666667%;
   max-width: 66.666667%; }
 
-.col-3-of-3 {
+.col-5-of-6 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%; }
+
+.col,
+.col-6-of-6 {
   flex: 0 0 100%;
   max-width: 100%; }
 
 .projects {
-  background-color: orange; }
+  background-color: orange;
+  margin-top: 2rem;
+  padding: 2rem 20vw; }
   .projects .portfolio-header {
     font-size: 2.5rem;
     text-align: center; }
   .projects .project-tile {
-    background-color: aqua; }
-    .projects .project-tile .project-image {
-      max-width: 300px; }
+    background-color: aqua;
+    border: 1px solid orangered;
+    margin: 2rem;
+    min-width: 100px; }
+    .projects .project-tile .project-header {
+      text-align: center; }
+    .projects .project-tile .project-link .project-image {
+      max-width: 100%; }
