@@ -1,11 +1,24 @@
 .welcome {
     background-color: $color-secondary;
+    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+    font-size: 2rem;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-shadow: 0 0 1px $color-grey;
+
+    &__salutation {
+        font-weight: 600;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
 
     &__message {
-        margin: auto;
+
+        .link {
+            font-weight: 600;
+        }
     }
 }

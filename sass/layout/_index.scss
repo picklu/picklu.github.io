@@ -1,16 +1,7 @@
+@import "layout";
 @import "grid";
 @import "navbar";
 @import "welcome";
 @import "projects";
 @import "contact";
 @import "footer";
-
-.navbar,
-.welcome,
-.projects,
-.contact,
-.footer {
-    font-size: 1.6rem;
-    min-width: 300px;
-    padding: 2rem $gutter-main;
-}
