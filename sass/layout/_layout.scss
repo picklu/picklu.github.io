@@ -1,0 +1,10 @@
+.navbar,
+.welcome,
+.projects,
+.contact,
+.footer {
+    color: $color-grey;
+    font-size: 1.6rem;
+    min-width: 300px;
+    padding: 2rem $gutter-main 1rem $gutter-main;
+}
