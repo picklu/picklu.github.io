@@ -32,6 +32,16 @@ a:visited {
   .btn:focus, .btn:active {
     outline: none; }
 
+.navbar,
+.welcome,
+.projects,
+.contact,
+.footer {
+  color: #363636;
+  font-size: 1.6rem;
+  min-width: 300px;
+  padding: 2rem 20vw 1rem 20vw; }
+
 .row {
   display: flex;
   flex-wrap: wrap; }
@@ -91,13 +101,13 @@ a:visited {
         max-width: 70px;
         min-width: 50px; }
     .navbar__header .profile .description {
-      background-color: rgba(154, 179, 154, 0.6);
+      background-color: rgba(226, 187, 14, 0.7);
       border-radius: 0 10px;
       box-shadow: 0 0 5px #31aa26;
       color: #efefef;
       padding: 1rem;
       position: absolute;
-      bottom: -6rem;
+      bottom: -4rem;
       left: 50px;
       width: 30vw;
       text-shadow: 0 0 5px #31aa26;
@@ -111,58 +121,95 @@ a:visited {
   .navbar__toggler {
     margin-left: auto;
     display: none; }
+    .toggler {
+      display: none; }
     @media (max-width: 56.25em) {
       .navbar__toggler {
         align-self: center;
+        justify-self: end;
         font-size: 4rem;
-        display: block; } }
+        display: block; }
+        .bars {
+          border-radius: 5px;
+          padding: 1rem; }
+        .toggler:checked + .navbar__toggler > .bars {
+          background-color: rgba(25, 87, 19, 0.7);
+          color: #e2bb0e; } }
   .navbar__collapse {
     margin-left: auto; }
+    @media (max-width: 56.25em) {
+      .navbar__collapse {
+        margin-left: 0; } }
     .navbar__collapse .navbar-nav {
       display: flex;
       width: 100%; }
+      @media (max-width: 56.25em) {
+        .navbar__collapse .navbar-nav {
+          flex-direction: column;
+          background-color: rgba(49, 170, 38, 0.8);
+          border-radius: 0 0 5px 5px;
+          box-shadow: 0 3px 5px #195713;
+          position: absolute;
+          bottom: -13rem;
+          left: 2rem;
+          width: auto;
+          transform: translateX(-30rem);
+          transition: transform .3s; }
+          .toggler:checked ~ .navbar__collapse .navbar-nav {
+            transform: translateX(0); } }
       .navbar__collapse .navbar-nav .nav-item {
         border-radius: 5px;
         font-size: 2rem;
         margin-left: 1rem;
         padding: 1.2rem 1.5rem;
         text-transform: uppercase; }
+        @media (max-width: 56.25em) {
+          .navbar__collapse .navbar-nav .nav-item {
+            border-radius: inherit;
+            margin: 0;
+            padding: 1rem; }
+            .navbar__collapse .navbar-nav .nav-item:not(:last-child) {
+              border-radius: 0; } }
         .navbar__collapse .navbar-nav .nav-item:hover, .navbar__collapse .navbar-nav .nav-item:active {
           background-color: #195713;
           color: #efefef; }
-    @media (max-width: 56.25em) {
-      .navbar__collapse {
-        display: none; } }
 
 .welcome {
-  background-color: #9ab39a;
+  background-color: #e2bb0e;
+  background: linear-gradient(to bottom, #31aa26, #e2bb0e);
+  font-size: 2rem;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .welcome__message {
-    margin: auto; }
+  .welcome__salutation {
+    font-weight: 600;
+    margin-right: auto;
+    margin-bottom: 2rem; }
+  .welcome__message .link {
+    font-weight: 600; }
 
 .projects {
-  background-color: orangered; }
+  background-color: #e2bb0e;
+  background: linear-gradient(to bottom right, #31aa26, #e2bb0e); }
   .projects .portfolio-header {
     font-size: 2.5rem;
     text-align: center; }
   .projects .project-tile {
-    background-color: aqua;
-    border: 2px solid orange;
+    background-color: #e2bb0e;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #195713;
     margin: 2rem;
     min-width: 100px; }
     .projects .project-tile .project-header {
-      text-align: center; }
-    .projects .project-tile .project-link .project-image {
-      max-width: 100%; }
-
-.navbar,
-.welcome,
-.projects,
-.contact,
-.footer {
-  font-size: 1.6rem;
-  min-width: 300px;
-  padding: 2rem 20vw; }
+      font-size: 2rem;
+      font-weight: 300;
+      padding: 1rem;
+      text-align: center;
+      text-shadow: 0 0 3px #826c08; }
+    .projects .project-tile .project-link {
+      border-radius: 5px; }
+      .projects .project-tile .project-link .project-image {
+        border-radius: inherit;
+        max-width: 100%; }

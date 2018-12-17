@@ -25,13 +25,13 @@
             }
 
             .description {
-                background-color: rgba($color-secondary, .6);
+                background-color: rgba($color-secondary, .7);
                 border-radius: 0 10px;
                 box-shadow: 0 0 5px $color-primary;
                 color: $color-white;
                 padding: 1rem;
                 position: absolute;
-                bottom: -6rem;
+                bottom: -4rem;
                 left: 50px;
                 width: 30vw;
                 text-shadow: 0 0 5px $color-primary;
@@ -55,19 +55,57 @@
         margin-left: auto;
         display: none;
 
+        @at-root .toggler {
+            display: none;
+        }
+
         @include respond(tablet-port) {
             align-self: center;
+            justify-self: end;
             font-size: 4rem;
             display: block;
+
+            
+
+            @at-root .bars {
+                border-radius: 5px;
+                padding: 1rem;
+            }
+
+            @at-root .toggler:checked + &>.bars {
+                background-color: rgba(darken($color-primary, 20), .7);
+                color: $color-secondary;
+            }
         }
-    }
+   }
 
     &__collapse {
         margin-left: auto;
 
+        @include respond(tablet-port) {
+            margin-left: 0;
+        }
+
         .navbar-nav {
             display: flex;
             width: 100%;
+
+            @include respond(tablet-port) {
+                flex-direction: column;
+                background-color: rgba($color-primary, .8);
+                border-radius: 0 0 5px 5px;
+                box-shadow: 0 3px 5px darken($color-primary, 20);
+                position: absolute;
+                bottom: -13rem;
+                left: 2rem;
+                width: auto;
+                transform: translateX(-30rem);
+                transition: transform .3s;
+
+                @at-root .toggler:checked ~ & {
+                    transform: translateX(0);
+                }
+           }
 
             .nav-item {
                 border-radius: 5px;
@@ -76,16 +114,22 @@
                 padding: 1.2rem 1.5rem;
                 text-transform: uppercase;
 
+                @include respond(tablet-port) {
+                    border-radius: inherit;
+                    margin: 0;
+                    padding: 1rem;
+
+                    &:not(:last-child) {
+                        border-radius: 0;
+                    }
+                }
+
                 &:hover,
                 &:active {
                     background-color: darken($color-primary, 20);
                     color: $color-white;
                 }
             }
-        }
-
-        @include respond(tablet-port) {
-            display: none;
         }
     }
 }
