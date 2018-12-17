@@ -41,6 +41,13 @@ a:visited {
   font-size: 1.6rem;
   min-width: 300px;
   padding: 2rem 20vw 1rem 20vw; }
+  @media (max-width: 56.25em) {
+    .navbar,
+    .welcome,
+    .projects,
+    .contact,
+    .footer {
+      padding: 1rem 2rem; } }
 
 .row {
   display: flex;
