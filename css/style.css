@@ -74,7 +74,7 @@ a:visited {
 
 .navbar {
   background-color: #31aa26;
-  box-shadow: 0 20px 35px #31aa26;
+  box-shadow: 0 3px 5px #195713;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -96,17 +96,26 @@ a:visited {
       box-shadow: 0 0 5px #31aa26;
       color: #efefef;
       padding: 1rem;
-      width: 30vw;
       position: absolute;
-      bottom: -7rem;
+      bottom: -6rem;
       left: 50px;
+      width: 30vw;
       text-shadow: 0 0 5px #31aa26;
       transform: translateY(-500px);
       transition: all .5s; }
     .navbar__header .profile:hover .description {
       transform: translateY(0); }
+      @media (max-width: 75em) {
+        .navbar__header .profile:hover .description {
+          display: none; } }
   .navbar__toggler {
+    margin-left: auto;
     display: none; }
+    @media (max-width: 56.25em) {
+      .navbar__toggler {
+        align-self: center;
+        font-size: 4rem;
+        display: block; } }
   .navbar__collapse {
     margin-left: auto; }
     .navbar__collapse .navbar-nav {
@@ -121,9 +130,12 @@ a:visited {
         .navbar__collapse .navbar-nav .nav-item:hover, .navbar__collapse .navbar-nav .nav-item:active {
           background-color: #195713;
           color: #efefef; }
+    @media (max-width: 56.25em) {
+      .navbar__collapse {
+        display: none; } }
 
 .welcome {
-  background-color: #31aa26;
+  background-color: #9ab39a;
   height: 100vh;
   display: flex;
   align-items: center;
