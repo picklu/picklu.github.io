@@ -153,11 +153,12 @@ a:visited {
       @media (max-width: 56.25em) {
         .navbar__collapse .navbar-nav {
           flex-direction: column;
-          background-color: rgba(49, 170, 38, 0.8);
+          background-color: rgba(49, 170, 38, 0.9);
           border-radius: 0 0 5px 5px;
           box-shadow: 0 3px 5px #195713;
+          margin-top: 4rem;
           position: absolute;
-          bottom: -12rem;
+          bottom: -13rem;
           left: 2rem;
           width: auto;
           transform: translateX(-30rem);
