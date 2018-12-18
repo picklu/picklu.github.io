@@ -18,36 +18,17 @@
                 border-radius: 50%;
 
                 img {
+                    border: 1px solid darken($color-primary, 30);
                     border-radius: inherit;
                     max-width: 70px;
                     min-width: 50px;
-                }
-            }
 
-            .description {
-                background-color: rgba($color-secondary, .7);
-                border-radius: 0 10px;
-                box-shadow: 0 0 5px $color-primary;
-                color: $color-white;
-                padding: 1rem;
-                position: absolute;
-                bottom: -3rem;
-                left: 50px;
-                width: 30vw;
-                text-shadow: 0 0 5px $color-primary;
-                transform: translateY(-500px);
-                transition: all .5s;
-            }
-
-            &:hover {
-                .description {
-                    transform: translateY(0);
-                    
-                    @include respond(tablet-land) {
-                        display: none;
+                    &:hover,
+                    &:active {
+                        box-shadow: 0 0 15px darken($color-primary, 30);
                     }
                 }
-            }
+           }
         }
     }
 
