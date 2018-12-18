@@ -200,9 +200,11 @@ a:visited {
 
 .projects {
   background-color: #e2bb0e;
-  background: linear-gradient(to bottom right, #31aa26, #e2bb0e); }
+  background: linear-gradient(to bottom right, #31aa26, #e2bb0e);
+  padding-top: 15rem; }
   .projects .portfolio-header {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
     text-align: center; }
   .projects .project-tile {
     background-color: #e2bb0e;
