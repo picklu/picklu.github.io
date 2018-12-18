@@ -41,13 +41,27 @@ a:visited {
   font-size: 1.6rem;
   min-width: 300px;
   padding: 2rem 20vw 1rem 20vw; }
+  @media (max-width: 75em) {
+    .navbar,
+    .welcome,
+    .projects,
+    .contact,
+    .footer {
+      padding: 2rem 8rem; } }
   @media (max-width: 56.25em) {
     .navbar,
     .welcome,
     .projects,
     .contact,
     .footer {
-      padding: 1rem 2rem; } }
+      padding: 2rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .navbar,
+    .welcome,
+    .projects,
+    .contact,
+    .footer {
+      padding: 1rem 3rem; } }
 
 .row {
   display: flex;
@@ -178,6 +192,17 @@ a:visited {
   align-items: center;
   justify-content: center;
   text-shadow: 0 0 1px #31aa26; }
+  .welcome__salutation, .welcome__message {
+    padding-left: 10rem;
+    padding-right: 10rem; }
+    @media (max-width: 56.25em) {
+      .welcome__salutation, .welcome__message {
+        padding-left: 5rem;
+        padding-right: 5rem; } }
+    @media (max-width: 37.5em) {
+      .welcome__salutation, .welcome__message {
+        padding-left: 0;
+        padding-right: 0; } }
   .welcome__salutation {
     font-weight: 600;
     margin-right: auto;

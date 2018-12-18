@@ -10,6 +10,22 @@
     justify-content: center;
     text-shadow: 0 0 1px $color-primary;
 
+    &__salutation,
+    &__message {
+        padding-left: 10rem;
+        padding-right: 10rem;
+  
+        @include respond(tablet-port) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        @include respond(phone) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
     &__salutation {
         font-weight: 600;
         margin-right: auto;
