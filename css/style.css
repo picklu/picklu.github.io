@@ -104,27 +104,12 @@ a:visited {
     .navbar__header .profile-link {
       border-radius: 50%; }
       .navbar__header .profile-link img {
+        border: 1px solid #0d2d0a;
         border-radius: inherit;
         max-width: 70px;
         min-width: 50px; }
-    .navbar__header .profile .description {
-      background-color: rgba(226, 187, 14, 0.7);
-      border-radius: 0 10px;
-      box-shadow: 0 0 5px #31aa26;
-      color: #efefef;
-      padding: 1rem;
-      position: absolute;
-      bottom: -3rem;
-      left: 50px;
-      width: 30vw;
-      text-shadow: 0 0 5px #31aa26;
-      transform: translateY(-500px);
-      transition: all .5s; }
-    .navbar__header .profile:hover .description {
-      transform: translateY(0); }
-      @media (max-width: 75em) {
-        .navbar__header .profile:hover .description {
-          display: none; } }
+        .navbar__header .profile-link img:hover, .navbar__header .profile-link img:active {
+          box-shadow: 0 0 15px #0d2d0a; }
   .navbar__toggler {
     margin-left: auto;
     display: none; }
@@ -190,7 +175,8 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  text-shadow: 0 0 1px #31aa26; }
   .welcome__salutation {
     font-weight: 600;
     margin-right: auto;
