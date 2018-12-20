@@ -7,6 +7,7 @@
     font-size: 1.6rem;
     min-width: 300px;
     padding: 2rem $gutter-main 1rem $gutter-main;
+    scroll-behavior: smooth;
 
     @include respond(tablet-land) {
         padding: 2rem 8rem;
