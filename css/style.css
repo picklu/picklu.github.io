@@ -296,6 +296,12 @@ a:visited {
       justify-content: space-between; }
       @media (max-width: 75em) {
         .project-tile__side--back {
+          padding: 1.2rem; } }
+      @media (max-width: 56.25em) {
+        .project-tile__side--back {
+          padding: 5rem; } }
+      @media (max-width: 37.5em) {
+        .project-tile__side--back {
           padding: 1rem; } }
       .project-tile__side--back-header {
         font-size: 2rem;
