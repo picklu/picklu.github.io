@@ -96,6 +96,10 @@
             flex-direction: column;
             justify-content: space-between;
 
+            @include respond(tablet-land) {
+                padding: 1rem;
+            }
+
             &-header {
                 font-size: 2rem;
                 font-weight: 300;
@@ -106,10 +110,18 @@
             &-description {
                 line-height: 1.5;
                 text-align: justify;
+
+                @include respond(tablet-land) {
+                    line-height: 1;
+                }
             }
 
             &-tools {
                 line-height: 2;
+
+                @include respond(tablet-land) {
+                    line-height: 1.5;
+                }
 
                 .list-item {
 

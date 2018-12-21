@@ -69,7 +69,6 @@ a:visited {
   flex-wrap: wrap;
   margin-bottom: 5%; }
 
-.col,
 .col-1-of-6,
 .col-2-of-6,
 .col-3-of-6,
@@ -101,10 +100,16 @@ a:visited {
   flex: 0 0 83.333333%;
   max-width: 83.333333%; }
 
-.col,
 .col-6-of-6 {
   flex: 0 0 100%;
   max-width: 100%; }
+
+@media (max-width: 56.25em) {
+  .col {
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .col:not(:last-child) {
+      margin-bottom: 5%; } }
 
 .navbar {
   background-color: #31aa26;
@@ -289,6 +294,9 @@ a:visited {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
+      @media (max-width: 75em) {
+        .project-tile__side--back {
+          padding: 1rem; } }
       .project-tile__side--back-header {
         font-size: 2rem;
         font-weight: 300;
@@ -297,8 +305,14 @@ a:visited {
       .project-tile__side--back-description {
         line-height: 1.5;
         text-align: justify; }
+        @media (max-width: 75em) {
+          .project-tile__side--back-description {
+            line-height: 1; } }
       .project-tile__side--back-tools {
         line-height: 2; }
+        @media (max-width: 75em) {
+          .project-tile__side--back-tools {
+            line-height: 1.5; } }
         .project-tile__side--back-tools .list-item::before {
           content: "\25C9"; }
         .project-tile__side--back-tools .list-item:hover::before {
