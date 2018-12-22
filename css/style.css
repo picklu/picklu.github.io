@@ -269,6 +269,10 @@ a:visited {
   height: 40rem;
   perspective: 150rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .project-tile {
+      box-shadow: 0 0 10px #0d2d0a;
+      height: auto; } }
   .project-tile__side {
     backface-visibility: hidden;
     box-shadow: 0 0 10px #0d2d0a;
@@ -280,15 +284,26 @@ a:visited {
     height: 100%;
     width: 100%;
     overflow: hidden; }
+    @media (max-width: 56.25em) {
+      .project-tile__side {
+        box-shadow: none;
+        height: 30rem;
+        position: relative; } }
     .project-tile__side--front {
       background-color: #31aa26; }
+      @media (max-width: 56.25em) {
+        .project-tile__side--front {
+          background-color: #524405;
+          opacity: .7;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0; } }
       .project-tile__side--front-jv-analysis {
         background-image: url(/images/jvanalysis.png);
         background-position: center;
         background-size: cover; }
     .project-tile__side--back {
       background-color: #e2bb0e;
-      background: linear-gradient(to right bottom, #e2bb0e, #fefcf1);
+      background: linear-gradient(to right bottom, #f8e591, #b2930b);
       padding: 2rem;
       transform: rotateY(180deg);
       display: flex;
@@ -299,15 +314,26 @@ a:visited {
           padding: 1.2rem; } }
       @media (max-width: 56.25em) {
         .project-tile__side--back {
-          padding: 5rem; } }
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          clip-path: polygon(0 25%, 25% 0%, 100% 25%, 100% 100%, 0 100%);
+          margin-top: -8rem;
+          padding: 5rem;
+          transform: rotateY(0); } }
       @media (max-width: 37.5em) {
         .project-tile__side--back {
           padding: 1rem; } }
       .project-tile__side--back-header {
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: 500;
         text-align: center;
         text-shadow: 0 0 3px #826c08; }
+        @media (max-width: 56.25em) {
+          .project-tile__side--back-header {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            margin-left: 15%;
+            text-align: left; } }
       .project-tile__side--back-description {
         line-height: 1.5;
         text-align: justify; }
@@ -325,5 +351,11 @@ a:visited {
           color: #ff0000; }
   .project-tile:hover .project-tile__side--front {
     transform: rotateY(-180deg); }
+    @media (max-width: 56.25em) {
+      .project-tile:hover .project-tile__side--front {
+        transform: rotateY(0); } }
   .project-tile:hover .project-tile__side--back {
     transform: rotateY(0); }
+    @media (max-width: 56.25em) {
+      .project-tile:hover .project-tile__side--back {
+        transform: rotateY(0); } }
