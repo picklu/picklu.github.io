@@ -89,6 +89,8 @@
         }
     
         &--front {
+            background-position: top;
+            background-size: cover;
             background-color: $color-primary;
 
             @include respond(tablet-port) {
@@ -99,9 +101,11 @@
             }
 
             &-jv-analysis {
-                background-image: url(/images/jvanalysis.png);
-                background-position: top;
-                background-size: cover;
+                background-image: url(/images/jv_analysis.png);
+           }
+
+            &-tribute-page {
+                background-image: url(/images/tribute_page.png);
             }
         }
 
