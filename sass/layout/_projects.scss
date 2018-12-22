@@ -6,7 +6,7 @@
     padding-right: 5rem;
 
     @include respond(tablet-land) {
-        padding: 2rem 3rem;
+        padding: 8rem 3rem 2rem 3rem;
     }
     
     @include respond(tablet-port) {
