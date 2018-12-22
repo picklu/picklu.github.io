@@ -306,6 +306,14 @@ em {
         background-image: url(/images/jv_analysis.png); }
       .project-tile__side--front-tribute-page {
         background-image: url(/images/tribute_page.png); }
+      .project-tile__side--front-survey-form {
+        background-image: url(/images/survey_form.png); }
+      .project-tile__side--front-product-landing-page {
+        background-image: url(/images/product_landing_page.png); }
+      .project-tile__side--front-technical-documentation-page {
+        background-image: url(/images/technical_documentation_page.png); }
+      .project-tile__side--front-blank-page {
+        background-image: url(http://via.placeholder.com/250x500); }
     .project-tile__side--back {
       background-color: #e2bb0e;
       background: linear-gradient(to right bottom, #f8e591, #b2930b);
