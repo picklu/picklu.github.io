@@ -4,6 +4,10 @@
     color: $color-white;
     padding-top: 5rem;
 
+    &__row {
+        margin-bottom: 5%;
+    }
+
     @include respond(tablet-land) {
         padding-top: 4rem;
     }

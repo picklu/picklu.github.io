@@ -52,7 +52,7 @@
   <section id="projects" class="projects"><!-- start of projects -->
     <h2 class="portfolio-header"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;&nbsp;Portfolio</h2>
 
-    <div class="row"><!-- first row of the projedts -->
+    <div class="row projects__row"><!-- first row of the projedts -->
 
       <div class="col-2-of-6 col"><!-- jv analysis -->
         <div class="project-tile">
@@ -111,7 +111,7 @@ Survey Form</a></h2>
 
    </div><!-- end of first row -->
 
-    <div class="row"><!-- second row of the projects -->
+    <div class="row projects__row"><!-- second row of the projects -->
 
       <div class="col-2-of-6 col"><!-- product landing page -->
         <div class="project-tile">
@@ -173,29 +173,37 @@ Blank Project</a></h2>
 
   <section id="contact" class="contact"><!-- start of contact -->
     <h2 class="contact__header"><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;&nbsp;Contact</h2>
-    <div class="row">
-     <div class="col-4-of-6 contact__form col">
-       <form class="form">
-        <div class="form-group">
-          <input type="text" class="form-control" id="name" placeholder="Your Name">
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@address">
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" id="message" rows="4" placeholder="Hi Picklu, I just want to say that you did a great work! Cheers..."></textarea>
+    <p class="contact__message">Please feel free to drop me a message regarding how I developed this <b>Portfolio Web Page</b>. I will definitely respond.</p>
+    <div class="contact__form">
+      <form class="form">
+        <div class="row">
+          <div class="col-3-of-6 col">
+            <div class="row">
+              <div class="col-6-of-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control--name" id="name" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="col-6-of-6">
+                <div class="form-group">
+                  <input type="email" class="form-control form-control--email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@address">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3-of-6 col">
+            <div class="form-group">
+              <textarea class="form-control form-control--message" id="message" rows="4" placeholder="Hi Picklu, I just want to say that you did a great work! Cheers..."></textarea>
+            </div>
+          </div>
         </div>
         <button type="submit" class="btn btn-contact btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;&nbsp;Send</button>
       </form>
-     </div> 
-      <div class="col-2-of-6 contact__text col">
-        <p>Please feel free to drop me a message regarding how I developed this <b>Portfolio Web Page</b>. I will definitely respond.</p>
-      </div>
-    </div>
+    </div> 
   </section><!-- end of contact -->
 
   <footer class="footer"><!-- start of footer  -->
-    <div class="row">
+    <div class="row footer__row">
       <div class="col-3-of-6 footer__text col">
         <p class="footer__text--content">Built with <i class="fas fa-heart"></i> by <a class="text-footer" href="https://picklu.github.io" target="_blank">picklu</a></p>
       </div>
@@ -212,7 +220,7 @@ Blank Project</a></h2>
       </div>
     </div>
         
-    <div class="row">
+    <div class="row footer__row">
       <div class="col-6-of-6 col">
         <small class="copyright">&copy; picklu 2018.</small>
       </div>
