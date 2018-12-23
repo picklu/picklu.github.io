@@ -63,7 +63,7 @@ em {
 .contact,
 .footer {
   color: #363636;
-  font-size: 2rem;
+  font-size: 1.6rem;
   min-width: 300px;
   padding: 2rem 20vw 1rem 20vw;
   scroll-behavior: smooth; }
@@ -399,6 +399,7 @@ em {
 .contact {
   background-color: #e2bb0e;
   background: linear-gradient(to bottom, #31aa26, #e2bb0e);
+  font-size: 2rem;
   padding-top: 15rem; }
   .contact .column {
     flex-direction: column;
