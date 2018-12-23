@@ -1,0 +1,109 @@
+.contact {
+    background-color: $color-secondary;
+    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+    padding-top: 15rem;
+
+    .column {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    @include respond(tablet-land) {
+        padding-top: 8rem;
+    }
+    
+    @include respond(tablet-port) {
+        padding-top: 2rem;
+    }
+    
+    @include respond(phone) {
+        padding-top: 1rem;
+    }
+
+    &__header {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include respond(tablet-land) {
+            font-size: 2.5rem;
+        }
+    }
+
+    .link {
+        padding: .3rem .7rem;
+        position: relative;
+
+        &::after {
+            background-color: rgba($color-primary, .5);
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            transform: skewX(-15deg);
+            transition: all .5s;
+        }
+
+        &:hover {
+            color: #ff0000;
+            text-decoration: underline;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__message {
+        padding: 2rem 0;
+        text-align: justify;
+    }
+
+    &__form {
+
+        .form {
+            width: 100%;
+
+            &-group {
+                border-radius: 5px;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                width: 100%;
+
+                &__btn {
+                    display: flex;
+                }
+            }
+
+            &-control {
+                border: 2px solid darken($color-secondary, 10);
+                border-radius: inherit;
+                font-size: inherit;
+                line-height: 1.5;
+                padding: 1rem;
+                width: 100%;
+                justify-self: flex-end;
+
+                &--message {
+                    height: 100%;
+                    width: 100%;
+                    margin-left: 2rem;
+                    resize: none;
+
+                    @include respond(tablet-port) {
+                        margin-left: 0;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    border-color: $color-primary;
+                    box-shadow: 0 0 15px $color-primary;
+                }
+            }
+        }
+    }
+}
