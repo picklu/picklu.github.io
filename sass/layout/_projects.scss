@@ -1,12 +1,13 @@
 .projects {
     background-color: $color-secondary;
     background: linear-gradient(to bottom, $color-secondary, $color-primary);
-    padding-top: 15rem;
+    padding-top: 12rem;
     padding-left: 5rem;
     padding-right: 5rem;
 
     @include respond(tablet-land) {
-        padding: 8rem 3rem 2rem 3rem;
+        padding: 2rem;
+        padding-top: 8rem;
     }
     
     @include respond(tablet-port) {
@@ -18,12 +19,14 @@
     }
 
     &__row {
-        margin-bottom: 5%;
+        &:not(:last-child) {
+            margin-bottom: 5%;
+        }
     }
 
     .portfolio-header {
         font-size: 3rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         text-align: center;
 
         @include respond(tablet-land) {
