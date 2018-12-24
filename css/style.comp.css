@@ -36,8 +36,8 @@ em {
     outline: none; }
   .btn__form {
     background-color: #826c08;
-    border-radius: inherit;
-    box-shadow: 0 0 5px #e2bb0e;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #252525;
     color: inherit;
     display: block;
     font-size: 2.5rem;
@@ -52,9 +52,9 @@ em {
       .btn__form {
         width: 100%; } }
     .btn__form:hover {
-      color: #efefef;
-      box-shadow: 0 0 15px #31aa26; }
+      color: #efefef; }
     .btn__form:focus {
+      box-shadow: 0 0 2px #252525;
       transform: translateY(3px); }
   .btn__social {
     border-radius: 5px;
@@ -71,7 +71,7 @@ em {
   color: #363636;
   font-size: 1.6rem;
   min-width: 300px;
-  padding: 2rem 20vw 1rem 20vw;
+  padding: 2rem 20vw 2rem 20vw;
   scroll-behavior: smooth; }
   @media (max-width: 75em) {
     .navbar,
@@ -251,23 +251,24 @@ em {
 .projects {
   background-color: #e2bb0e;
   background: linear-gradient(to bottom, #e2bb0e, #31aa26);
-  padding-top: 15rem;
+  padding-top: 12rem;
   padding-left: 5rem;
   padding-right: 5rem; }
   @media (max-width: 75em) {
     .projects {
-      padding: 8rem 3rem 2rem 3rem; } }
+      padding: 2rem;
+      padding-top: 8rem; } }
   @media (max-width: 56.25em) {
     .projects {
       padding: 2rem; } }
   @media (max-width: 37.5em) {
     .projects {
       padding: 1rem; } }
-  .projects__row {
+  .projects__row:not(:last-child) {
     margin-bottom: 5%; }
   .projects .portfolio-header {
     font-size: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     text-align: center; }
     @media (max-width: 75em) {
       .projects .portfolio-header {
@@ -406,13 +407,13 @@ em {
   background-color: #e2bb0e;
   background: linear-gradient(to bottom, #31aa26, #e2bb0e);
   font-size: 2rem;
-  padding-top: 15rem; }
+  padding-top: 12rem; }
   .contact .column {
     flex-direction: column;
     margin-bottom: 0; }
   @media (max-width: 75em) {
     .contact {
-      padding-top: 8rem; } }
+      padding-top: 5rem; } }
   @media (max-width: 56.25em) {
     .contact {
       padding-top: 2rem; } }
@@ -421,7 +422,7 @@ em {
       padding-top: 1rem; } }
   .contact__header {
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center; }
     @media (max-width: 75em) {
       .contact__header {
@@ -451,31 +452,34 @@ em {
   .contact__form .form {
     width: 100%; }
     .contact__form .form-group {
-      border-radius: 5px;
       margin-top: 1rem;
       margin-bottom: 1rem;
       width: 100%; }
-      .contact__form .form-group__btn {
+      .contact__form .form-group--message {
+        margin-left: 2rem; }
+        @media (max-width: 56.25em) {
+          .contact__form .form-group--message {
+            margin-left: 0; } }
+      .contact__form .form-group--btn {
         display: flex; }
     .contact__form .form-control {
-      border: 2px solid #b2930b;
-      border-radius: inherit;
+      border: 1px solid #b2930b;
+      border-bottom: 1rem solid transparent;
+      border-radius: 5px;
       font-size: inherit;
       line-height: 1.5;
       padding: 1rem;
       width: 100%;
-      justify-self: flex-end; }
+      justify-self: flex-end;
+      transition: all .5s; }
       .contact__form .form-control--message {
         height: 100%;
         width: 100%;
-        margin-left: 2rem;
         resize: none; }
-        @media (max-width: 56.25em) {
-          .contact__form .form-control--message {
-            margin-left: 0; } }
+      .contact__form .form-control:focus, .contact__form .form-control:active {
+        outline: none; }
       .contact__form .form-control:hover, .contact__form .form-control:focus {
-        border-color: #31aa26;
-        box-shadow: 0 0 15px #31aa26; }
+        border-bottom: 1rem solid #b2930b; }
 
 .footer {
   background-color: #826c08;
