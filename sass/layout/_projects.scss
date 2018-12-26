@@ -134,12 +134,28 @@
 
         &--back {
             background-color: $color-secondary;
-            background: linear-gradient(to right bottom, lighten($color-secondary, 30), darken($color-secondary, 10));
+            background: linear-gradient(to right bottom, lighten($color-grey, 20), darken($color-grey, 20));
+            color: $color-white;
             padding: 2rem;
             transform: rotateY(180deg);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            &-jv-analysis {
+                background: linear-gradient(to right bottom, lighten($color-jv-analysis, 20), darken($color-jv-analysis, 20));
+                color: $color-black;
+            }
+
+            &-tribute-page {
+                background: linear-gradient(to right bottom, lighten($color-primary, 20), darken($color-primary, 20));
+                color: $color-black;
+            }
+
+            &-survey-form {
+                background: linear-gradient(to right bottom, lighten($color-survey-form, 20), darken($color-jv-analysis, 20));
+                color: $color-black;
+            }
 
             @include respond(tablet-land) {
                 padding: 1.2rem;

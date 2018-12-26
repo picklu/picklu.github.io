@@ -1,6 +1,6 @@
 .welcome {
     background-color: $color-secondary;
-    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+    background: linear-gradient(to bottom, $color-primary 50%, $color-secondary);
     color: $color-black;
     font-size: 2.5rem;
     height: 100vh;
