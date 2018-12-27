@@ -46,16 +46,14 @@
             font-size: 4rem;
             display: block;
 
-            
-
             @at-root .bars {
                 border-radius: 5px;
                 padding: 1rem;
             }
 
             @at-root .toggler:checked + &>.bars {
-                background-color: rgba(darken($color-primary, 20), .7);
-                color: $color-secondary;
+                background-color: rgba(darken($color-primary, 30), .7);
+                color: $color-white;
             }
         }
    }
@@ -79,9 +77,9 @@
                 margin-top: 4rem;
                 position: absolute;
                 bottom: -13rem;
-                left: 2rem;
+                right: 2rem;
                 width: auto;
-                transform: translateX(-30rem);
+                transform: translateX(30rem);
                 transition: transform .3s;
 
                 @at-root .toggler:checked ~ & {
