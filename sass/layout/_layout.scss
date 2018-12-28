@@ -7,7 +7,6 @@
     font-size: 1.6rem;
     min-width: 300px;
     padding: 2rem $gutter-main 2rem $gutter-main;
-    scroll-behavior: smooth;
 
     @include respond(tablet-land) {
         padding: 2rem 8rem;
@@ -19,5 +18,15 @@
     
     @include respond(phone) {
         padding: 1rem 3rem;
+    }
+}
+
+
+#welcome-section,
+#projects,
+#contact {
+    
+    &:target {
+        animation:  playAnimation 1s;
     }
 }
