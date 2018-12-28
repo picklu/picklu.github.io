@@ -1,10 +1,10 @@
 @keyframes playAnimation {
   0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(3rem); }
+    transform: scale(1); }
+  70% {
+    transform: scale(0.7); }
   100% {
-    transform: translateY(0); } }
+    transform: scale(1); } }
 
 html {
   background-color: #18b679;
@@ -105,9 +105,9 @@ em {
     .footer {
       padding: 1rem 3rem; } }
 
-#welcome-section:target,
-#projects:target,
-#contact:target {
+#welcome-section:target > *,
+#projects:target > *,
+#contact:target > * {
   animation: playAnimation 1s; }
 
 .row {

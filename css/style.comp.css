@@ -1,9 +1,18 @@
+@keyframes playAnimation {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(3rem); }
+  100% {
+    transform: translateY(0); } }
+
 html {
   background-color: #18b679;
   background: linear-gradient(to bottom, #18b679, #1a6eb3);
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth; }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -73,8 +82,7 @@ em {
   color: #090533;
   font-size: 1.6rem;
   min-width: 300px;
-  padding: 2rem 20vw 2rem 20vw;
-  scroll-behavior: smooth; }
+  padding: 2rem 20vw 2rem 20vw; }
   @media (max-width: 75em) {
     .navbar,
     .welcome,
@@ -96,6 +104,11 @@ em {
     .contact,
     .footer {
       padding: 1rem 3rem; } }
+
+#welcome-section:target,
+#projects:target,
+#contact:target {
+  animation: playAnimation 1s; }
 
 .row {
   display: flex;
