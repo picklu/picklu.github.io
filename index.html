@@ -175,19 +175,19 @@ Blank Project</a></h2>
     <h2 class="contact__header"><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;&nbsp;Contact</h2>
     <p class="contact__message">Please feel free to drop me a message regarding how I developed this <b>Portfolio Web Page</b>. I will definitely respond.</p>
     <div class="contact__form">
-      <form class="form">
+      <form class="form" action="mailto:picklumithu@yahoo.com?subject=hi picklu" method="post" enctype="text/plain">
         <div class="row form__row">
           <div class="col-3-of-6 col column">
             <div class="form-group form-group--name">
-              <input type="text" class="form-control form-control--name" id="name" placeholder="Your Name">
+              <input type="text" class="form-control form-control--name" id="name" name="name" placeholder="Your Name">
             </div>
             <div class="form-group form-group--email">
-              <input type="email" class="form-control form-control--email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@address">
+              <input type="email" class="form-control form-control--email" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="email@address">
             </div>
           </div>
           <div class="col-3-of-6 col">
             <div class="form-group form-group--message">
-              <textarea class="form-control form-control--message" id="message" placeholder="Hi Picklu, I just want to say that you did a great work! Cheers..."></textarea>
+              <textarea class="form-control form-control--message" id="message" name="message" placeholder="Hi Picklu, I just want to say that you did a great work! Cheers..."></textarea>
             </div>
           </div>
         </div>
